@@ -1,0 +1,308 @@
+<style>
+.tools-qrd.active{background:rgba(0,0,0,.5) url({bluesea::C('site_ewm')}) no-repeat center center;background-size:120px 120px;height:140px;}
+</style>   
+   <div class="footer">
+	<div class="footer-nav clearfix">
+		<div style="float: none; margin: 0 auto; width: 600px;" >
+		
+			<dl style="width:500px;margin-left: auto;margin-right: auto;" class="list-arrow-square">
+				<dt>关于{bluesea::C('site_name')}</dt>
+				<dt>联系电话：{bluesea::C('ipc')}</dt>
+				<dt>联系地址：{bluesea::C('keyword')}</dt>
+				<dt>客服QQ：{bluesea::C('site_qq')}</dt>
+				
+				
+				<!--<dd><a href="#" >联系电话：{bluesea::C('ipc')}</a></dd>
+				<dd><a href="#" >联系地址：{bluesea::C('keyword')}</a></dd>
+				<dd><a href="#" >客服QQ：{bluesea::C('site_qq')}</a></dd>-->
+			</dl>
+			
+			
+			
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="wrap clearfix">
+			<div style="text-align:center;">
+				Copyright (c) 2014-2015 All Rights Reserved {bluesea::C('site_name')} 版权所有
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="{bluesea::RES}/Js/kf.js"></script>
+<div class="mod-tools" id="tools">
+    <a href="tencent://message/?uin={bluesea::C('site_qq')}&&Site=sc.admin5.com&&Menu=yes" class="tools-qq" id="launch_qq">QQ交谈</a>
+    <a class="tools-phone">{bluesea::C('ipc')}</a>
+    <!-- <a class="tools-spread" href="/spread">申请代理</a>
+
+    <a class="tools-qrd" ></a> -->
+</div>
+
+
+<style>
+  .pop{width:427px;height:143px;position:fixed;left:50%;top:50%;margin:-72px 0 0 -213px;background:url({bluesea::RES}/{bluesea::RES}/Images/kefu.png) no-repeat;z-index: 1050;display: none;}
+  .pop-text{margin-left:180px;font-size:14px;color:#999;}
+  .pop-text h1{color:#566f72;font-size:18px;}
+  .pop-btn{margin-left:180px;}
+  .pop-btn a{display:inline-block;width:90px;height:30px;line-height:30px;text-align:center;color:#fff;text-decoration:none;-webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;}
+  .pop-ok{background:#e8645a;-webkit-box-shadow:inset 2px 2px 2px rgba(0,0,0,.2);-moz-box-shadow:inset 2px 2px 2px rgba(0,0,0,.2);box-shadow:inset 2px 2px 2px rgba(0,0,0,.2);}
+  .pop-cancel{background:#cccccc;}
+</style>
+<!-- <div class="pop" id="qq_talk">
+  <script>
+    BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 79177618, selector: 'BizQQWPA'});
+  </script>
+	<div class="pop-text">
+		<h1>尊敬的用户：</h1>
+		<p>您好，请问有什么可以帮到您？</p>
+	</div>
+	<div class="pop-btn">
+    <a class="pop-ok" id="BizQQWPA" href="javascript:void(0);">QQ交谈</a>
+    <a onclick="hideModal('qq_talk');return false;" href="javascript:void(0);" class="pop-cancel">下次再说</a>
+	</div>
+</div> 
+
+
+  <div class="mod-page-circle page-index" id="page-index">
+    <ul class="nav">
+      <li><a href="#index-0">0</a></li>
+      <li><a href="#index-1">1<i></i><span>V-领先服务</span></a></li>
+      <li><a href="#index-2">2<i></i><span>谁用了{bluesea::C('site_name')}</span></a></li>
+    </ul>
+  </div>
+-->
+
+  <div class="modal fade" id="modalCase">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <a class="modal-close"></a>
+          <ul id="slider-case" class="slider">
+            <li>
+              <h4>永安保险</h4>
+              <p></p>
+              <div class="slider-case-box">
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/永安保险1.jpg">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/永安保险2.jpg">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/永安保险.jpg" width="180">
+                  <span>扫描二维码即可查看详情</span>
+                  .                          
+                  <p>雷锋无忧首创微信保险</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>洋河1号</h4>
+              <p></p>
+              <div class="slider-case-box">
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/洋河1号1.jpg">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/洋河1号2.jpg">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/洋河1号.jpg" width="180">
+                  <span>扫描二维码即可查看详情</span>
+                  .                          
+                  <p>白酒行业微信营销领跑者</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>锦江旅游在线</h4>
+              <p></p>
+              <div class="slider-case-box">
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/锦江旅游在线1.png">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/锦江旅游在线2.png">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/锦江旅游在线.jpg" width="180">
+                  <span>扫描二维码即可查看详情</span>
+                  .                          
+                  <p>展示、评论、支付，功能完备</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>福馨西饼</h4>
+              <p></p>
+              <div class="slider-case-box">
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/福馨西饼1.jpg">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/福馨西饼2.jpg">
+                  .                            </div>
+                <div class="slider-case-td">
+                  <img src="{bluesea::RES}/Images/福馨西饼.jpg" width="180">
+                  <span>扫描二维码即可查看详情</span>
+                  .                          
+                  <p>高端西饼品牌连锁</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--  js  -->
+  <script src="{bluesea::RES}/Js/jquery.anythingslider.min.js"></script>
+  <script src="{bluesea::RES}/Js/affix.js"></script>
+  <script src="{bluesea::RES}/Js/scrollspy.js"></script>
+	<script src="{bluesea::RES}/Js/plugins.js"></script>
+	<script src="{bluesea::RES}/Js/main.js"></script>
+  <script src="{bluesea::RES}/Js/jquery.cookie.js"></script>
+	<script>
+		$(function(){
+			$('#slider-spread').anythingSlider({
+				theme:"minimalist-round",
+				buildStartStop:false,
+				pauseOnHover: true,
+				startPanel:0,
+        hashTags: false
+			});
+		});
+	</script>
+	<script>
+		$("#change_verify_code").click(function() {
+			$image_code = $('#image_code');
+			$image_code.attr("src", $image_code.attr("src") + Math.random());
+			$('#verify_code').val('').focus();
+			return false;
+		});
+	</script>
+
+
+  
+<script>
+  $(function(){
+    $("#page-index").affix({
+        offset: {
+            top: 200,
+            bottom: 300
+        }
+    });
+    $.fn.scrollspy.Constructor.DEFAULTS = {
+        offset: 100
+    }
+  });
+</script>
+
+<script>
+    $(function(){
+        $(window).resize(function(){
+            $('#slider-index').anythingSlider({
+                theme:"cs-portfolio",
+                buildStartStop:false,
+                autoPlay:true,
+                pauseOnHover: true,
+                buildArrows:false,
+                startPanel:0,
+                hashTags: false
+            });
+        });
+        $('#slider-index').anythingSlider({
+            theme:"cs-portfolio",
+            buildStartStop:false,
+            autoPlay:true,
+            pauseOnHover: true,
+            buildArrows:false,
+            startPanel:0,
+            hashTags: false
+        });
+        $('#slider-note').anythingSlider({
+            mode: "vertical",
+            buildNavigation: false,
+            theme:"cs-portfolio",
+            buildStartStop:false,
+            autoPlay:true,
+            pauseOnHover: true,
+            buildArrows:false,
+            startPanel:0,
+            hashTags: false
+        });
+        $('#slider-index-4').anythingSlider({
+            theme:"minimalist-square",
+            buildStartStop:false,
+            autoPlay:true,
+            pauseOnHover: true,
+            expand : true,
+            showMultiple : 5,
+            startPanel:0,
+            hashTags: false
+        });
+
+        $('#slider-case').anythingSlider({
+            theme:"minimalist-square",
+            autoPlay: false,
+            buildStartStop:false,
+            pauseOnHover: true,
+            expand : true,
+            showMultiple : 1,
+            startPanel:3,
+            hashTags: false
+        });
+
+    });
+
+    /*$(function(){
+     if (window.location.pathname == '/'){ //是根目录(index)
+        //清除 用户不要显示 qq 的 cookie
+        $.removeCookie('close_qq', { path: '/' });
+      }
+
+      // var delay_time =
+      //判断是否超过1分钟
+      setTimeout(function(){
+        if($.cookie('close_qq') == 'true'){
+          //用户已经关闭 qq 了, 不要再显示了
+        }else{
+          showModal("qq_talk");
+        }
+      }, 15000);
+    });*/
+
+    function getSecondsDiff(date1, date2){
+      var diff = (date2-date1)/86400000*24*60*60
+      return  Math.abs(parseInt(diff));
+    }
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 980334950;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="{bluesea::RES}/Js/conversion.js">
+</script>
+
+<!-- WPA Button Begin -->
+
+<!-- WPA Button END -->
+
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="{bluesea::RES}/Images/下载.gif"/>
+</div>
+</noscript>
+
+
+</body>
+</html>

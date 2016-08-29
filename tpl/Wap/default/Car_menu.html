@@ -1,0 +1,21 @@
+
+
+    <span class="copyright" >
+    <if condition="$iscopyright eq 1">
+    {bluesea:$homeInfo.copyright}
+    <else/>
+    {bluesea:$siteCopyright}
+    </if>
+    </span>
+
+<script type="text/javascript">
+window.shareData = {
+            "moduleName":"Car",
+            "moduleID":"0",
+            "imgUrl": "",
+            "sendFriendLink": "{bluesea:$f_siteUrl}{bluesea::U('Car/index',array('token'=>$token))}",
+            "tTitle": "微汽车",
+            "tContent": "微汽车"
+        };
+</script>
+{bluesea:$shareScript}

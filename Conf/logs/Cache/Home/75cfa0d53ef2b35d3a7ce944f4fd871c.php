@@ -1,0 +1,197 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html  style=""  class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta  charset="utf-8">
+    <meta  http-equiv="X-UA-Compatible"  content="IE=edge">
+      
+  <title>免费注册_<?php echo C('site_name');?></title>
+
+    <meta  name="description"  content="">
+    <meta  name="viewport"  content="width=device-width, initial-scale=1">
+    <link  rel="stylesheet"  href="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Css/normalize.css">
+    <link  rel="stylesheet"  href="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Css/main.css">
+    <link  rel="stylesheet"  href="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Css/anythingslider.css">
+    <script  src="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Js/com-5cdb71a4da6f82e1769453d6007639a1.js"  type="text/javascript"></script>
+    <script  src="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Js/modernizr-2.6.2.min.js"></script>
+</head>
+<body  class="bg-blue login-body">
+  
+
+  
+<div  class="login-main">
+	<div  class="mod-form form-register">
+		<a  href="<?php echo C('site_url');?>/index.php?m=Index&a=login"  class="btn-login"></a>
+		<div  class="clearfix">
+			<p  class="logo">
+				<a href="/" style="background:none;width:160px;height:40px;margin: 5px 0;"><img src="<?php echo C('site_logo');?>" style="width:100%;height:100%;" /></a>
+			</p>
+		</div>
+		<form  action="<?php echo U('Users/checkreg');?>"  class="form-hor clearfix J-tips"   method="post" >
+			<div  class="form-li">
+				<div  class="li-lable">*用户名</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_nickname"  name="username"  placeholder="请输入用户名"  size="30"  type="text">
+				</div>
+				
+			</div>
+			<div  class="form-li">
+				<div  class="li-lable">*密码</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_password"  name="password"  placeholder="*长度为6~16位字符"  size="30"  type="password"  value="">
+				</div>
+				
+			</div>
+			<div  class="form-li">
+				<div  class="li-lable">*确认密码</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_password_confirmation"  name="repassword"  size="30"  type="password">
+				</div>
+			</div>
+			<!--<div  class="form-li">
+				<div  class="li-lable">*联 系 人</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_contact"  name="contact"  placeholder="请输入您的姓名"  size="30"  type="text">
+				</div>
+			</div>
+			<div  class="form-li">
+				<div  class="li-lable">*公司名称</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_company_name"  name="company_name"  placeholder="请输入您公司名称"  size="30"  type="text">
+				</div>
+			</div>-->
+			<div  class="form-li">
+				<div  class="li-lable">*联系电话</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_tel"  name="tel"  placeholder=""  size="30"  type="text">
+				</div>
+			</div>
+			<div  class="form-li">
+				<div  class="li-lable">*验证邮箱</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_email"  name="email"  placeholder="*邮箱可用于找回密码，请填写"  size="30"  type="text">
+				</div>
+			</div>
+			<div  class="form-li">
+				<div  class="li-lable">QQ</div>
+				<div  class="li-input">
+					<input  class="input"  id="supplier_qq"  name="qq"  placeholder="请输入您的QQ"  size="30"  type="text">
+				</div>
+			</div>
+			<div  class="li-btn">
+				<input  class="btn btn-green btn-submit"  data-disable-with="提交中..."  name="commit"  type="submit"  value="注册">
+				
+			</div>
+</form>
+<!--
+	<form action="<?php echo U('Users/checkreg');?>" method="post"  class="form-hor clearfix J-tips" >
+	<div class="reg_main">
+    	<div class="title">
+        	<i>1</i><h2>账号信息</h2>
+        </div>
+        <table width="100%" border="0">
+          <tr>
+            <th>用户名</th>
+            <td><input name="username" id="username" type="text" placeholder="请输入用户名" class="input" /></td>
+          </tr>
+          <tr>
+            <th>密码</th>
+            <td><input name="password" id="password" type="password" placeholder="请输入密码" /></td>
+          </tr>
+          <tr>
+            <th>确认密码</th>
+            <td><input name="repassword" id="repassword" type="password" placeholder="请确认密码" /></td>
+          </tr>
+        </table>
+        <div class="title">
+        	<i>2</i><h2>公司信息</h2>
+        </div>
+        <table width="100%" border="0">
+          <tr>
+            <th>邮箱</th>
+            <td><input name="email" id="email" type="text" placeholder="请输入邮箱" /></td>
+          </tr>
+          <tr>
+            <th>QQ</th>
+            <td><input name="qq" id="qq" type="text" placeholder="请填写qq" /></td>
+          </tr>
+          <tr>
+            <th>电话</th>
+            <td><input name="tel" id="phone" type="text" placeholder="请输入电话" /></td>
+          </tr>
+        </table>
+
+        <input type="submit" value="立即注册" class="btn_reg" />
+    </div>
+    </form>
+-->
+</div>
+</div>
+<div  class="bg-form">
+	<span>微信营销解决方案领导品牌</span>
+	<small>Micro-channel marketing solutions for leading brands</small>
+</div>
+  <script  src="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Js/jquery.anythingslider.min.js"></script>
+  <script  src="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Js/affix.js"></script>
+  <script  src="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Js/scrollspy.js"></script>
+  <script  src="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Js/plugins.js"></script>
+  <script  src="<?php echo C('site_url');?>/tpl/Home/bluesea/common/Js/main.js"></script>
+	<script>
+		$("#change_verify_code").click(function() {
+			$image_code = $('#image_code');
+			$image_code.attr("src", $image_code.attr("src") + Math.random());
+			$('#verify_code').val('').focus();
+			return false;
+		});
+	</script>
+	<script>
+		var metrics = [
+			[ "#supplier_nickname", 'presence', '用户名不能为空' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_password", 'presence', '密码不能为空' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_password", 'min-num:6', '密码太短最少6位' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_password_confirmation", 'presence', '确认密码不能为空' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+      [ '#supplier_password_confirmation', 'same-as:#supplier_password', '确认密码不一致' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_contact", 'presence', '联系人不能为空' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_company_name", 'presence', '公司名称不能为空' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_tel", 'presence', '联系电话不能为空' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_email", 'presence', '验证邮箱不能为空' ]
+		];
+
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: true} );
+
+		var metrics = [
+			[ "#supplier_email", 'email', '邮箱格式错误' ]
+		];
+		$("form").nod( metrics, {errorClass: "li-error", errorPosClasses: ['.li-input'], submitBtnSelector: ".btn-submit", silentSubmit: false} );
+	</script>
+</body></html>

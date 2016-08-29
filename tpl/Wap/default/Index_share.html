@@ -1,0 +1,31 @@
+
+	<if condition="ACTION_NAME eq 'index'">
+		<script type="text/javascript">
+			window.shareData = {  
+					"moduleName":"Index",
+					"moduleID": "0",
+					"imgUrl": "{bluesea:$homeInfo.picurl}", 
+					"timeLineLink": "{bluesea::C('site_url')}{bluesea::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"sendFriendLink": "{bluesea::C('site_url')}{bluesea::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"weiboLink": "{bluesea::C('site_url')}{bluesea::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"tTitle": "{bluesea:$homeInfo.title}",
+					"tContent": "{bluesea:$homeInfo.info}"
+				};
+		</script>
+	<else />
+		<script type="text/javascript">
+			window.shareData = {  
+				"moduleName":"NewsList",
+				"moduleID": "{bluesea:$_GET['classid']|intval}",
+				"imgUrl": "{bluesea:$thisClassInfo.img}", 
+				"timeLineLink": "{bluesea::C('site_url')}{bluesea::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"sendFriendLink": "{bluesea::C('site_url')}{bluesea::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"weiboLink": "{bluesea::C('site_url')}{bluesea::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"tTitle": "{bluesea:$thisClassInfo.name}",
+				"tContent": "{bluesea:$thisClassInfo.info}"
+			};
+		</script>	
+	
+	</if>
+	
+{bluesea:$shareScript}

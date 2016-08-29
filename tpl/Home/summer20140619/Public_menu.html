@@ -1,0 +1,19 @@
+<div class="wrap_header">
+    <div class="header">
+        <div class="navigation">
+            <div class="logo"><img src="{bluesea::C('site_logo')}" style="height:50px;">
+                </img>
+            </div>
+            <ul><li class="current"><a href="/">首页</a></li><li><a href="{bluesea::U('Index/index')}#func">功能</a></li><li><a href="{bluesea::U('Index/case')}">案例</a></li><li><a href="{bluesea::U('Index/agency')}">代理</a></li><!--<li><a href="{bluesea::U('Index/reg')}">入驻</a></li>--><li><a href="{bluesea::U('Index/contact')}">联系</a></li></ul>
+            <div class="login">
+                <if condition="$_SESSION[uid]==false">
+                  <a href="{bluesea::U('Index/login')}">登录</a>
+                  <a href="{bluesea::U('Index/reg')}" <if condition="$curr eq 'reg' ">class="current"</if>>注册</a>
+                <else />
+                  <a href="{bluesea::U('System/Admin/logout')}">注销</a><a href="{bluesea::U('User/Index/index')}"><php>echo $_SESSION['uname']</php></a>
+                </if>
+            </div>
+          
+        </div>
+    </div>
+</div>

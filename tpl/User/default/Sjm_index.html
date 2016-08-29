@@ -1,0 +1,35 @@
+<include file="Public:head"/>
+<div class="content" <if condition="session('isQcloud') eq true">style="float:center;"</if>>
+
+<div class="cLineB">
+微信小游戏
+ </div>
+
+ 
+ <div class="msgWrap form">
+
+<div class="bdrcontent">
+<div id="div_ptype">
+
+网址:
+<a href="{bluesea::C('site_url')}/youxi/index.html" target='_blank'>{bluesea::C('site_url')}/youxi/index.html</a><br>
+<p>请打开以上网址，选取想要的游戏，打开，然后复制浏览器的地址栏的网址，可以填写到微官网某个分类或者菜单中使用</p>
+
+
+
+
+
+</div>
+</div>
+
+          </div>
+  
+        </div>
+   
+        <div class="clr"></div>
+  
+
+
+<if condition="session('isQcloud') neq true">
+<include file="Public:footer"/>
+</if>
