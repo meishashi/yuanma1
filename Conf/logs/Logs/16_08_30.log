@@ -9546,3 +9546,913 @@ INFO: [ view_end ] --START--
 INFO: Run ShowPageTrace Behavior [ RunTime:-0.064004s ]
 INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2016-08-30T16:39:19+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.037002s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.022001s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.012001s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.017001s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE wecha_id='admin' AND lid=42 AND time>1472486400 AND time<1472572799 LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_lottery` SET `joinnum`=joinnum+1 WHERE ( `id` = 42 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery_cheat` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_cheat` WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `lid` = 42 ) AND ( `wecha_id` = '' ) AND ( `islottery` = 0 ) AND ( `time` = 0 ) AND ( `prize` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `tp_lottery_record` (`token`,`wecha_id`,`lid`,`usenums`,`islottery`,`wecha_name`,`phone`,`sn`,`time`,`prize`,`sendtime`) VALUES ('ttoswn1436851363','admin','42','96','0','','','','1472546359','7','0') [ RunTime:0.000000s ]
+SQL: UPDATE `tp_lottery_record` SET `usenums`=usenums+1 WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 48 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 65 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.231013s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1762 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1777 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1779 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1784 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1786 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.232013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.263015s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.264015s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.265015s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.266015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.266015s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T16:39:29+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE wecha_id='admin' AND lid=42 AND time>1472486400 AND time<1472572799 LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `tp_lottery` SET `joinnum`=joinnum+1 WHERE ( `id` = 42 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery_cheat` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_cheat` WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `lid` = 42 ) AND ( `wecha_id` = '' ) AND ( `islottery` = 0 ) AND ( `time` = 0 ) AND ( `prize` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `tp_lottery_record` (`token`,`wecha_id`,`lid`,`usenums`,`islottery`,`wecha_name`,`phone`,`sn`,`time`,`prize`,`sendtime`) VALUES ('ttoswn1436851363','admin','42','97','0','','','','1472546369','7','0') [ RunTime:0.001000s ]
+SQL: UPDATE `tp_lottery_record` SET `usenums`=usenums+1 WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 48 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 65 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.053003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1762 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1777 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1779 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1784 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1786 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.072004s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.072004s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.073004s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.074004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-08-30T16:42:05+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.002001s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE wecha_id='admin' AND lid=42 AND time>1472486400 AND time<1472572799 LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_lottery` SET `joinnum`=joinnum+1 WHERE ( `id` = 42 ) [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery_cheat` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_cheat` WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `lid` = 42 ) AND ( `wecha_id` = '' ) AND ( `islottery` = 0 ) AND ( `time` = 0 ) AND ( `prize` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `tp_lottery_record` (`token`,`wecha_id`,`lid`,`usenums`,`islottery`,`wecha_name`,`phone`,`sn`,`time`,`prize`,`sendtime`) VALUES ('ttoswn1436851363','admin','42','98','0','','','','1472546525','7','0') [ RunTime:0.000000s ]
+SQL: UPDATE `tp_lottery_record` SET `usenums`=usenums+1 WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 48 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 65 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1762 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1777 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1779 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1784 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1786 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.063004s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.064004s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.065004s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.065004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.065004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T16:42:25+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE wecha_id='admin' AND lid=42 AND time>1472486400 AND time<1472572799 LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_lottery` SET `joinnum`=joinnum+1 WHERE ( `id` = 42 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery_cheat` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_cheat` WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `lid` = 42 ) AND ( `wecha_id` = '' ) AND ( `islottery` = 0 ) AND ( `time` = 0 ) AND ( `prize` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `tp_lottery_record` (`token`,`wecha_id`,`lid`,`usenums`,`islottery`,`wecha_name`,`phone`,`sn`,`time`,`prize`,`sendtime`) VALUES ('ttoswn1436851363','admin','42','99','0','','','','1472546545','7','0') [ RunTime:0.000000s ]
+SQL: UPDATE `tp_lottery_record` SET `usenums`=usenums+1 WHERE ( `lid` = 42 ) AND ( `wecha_id` = 'admin' ) [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 48 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 55 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 61 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\GuajiangAction.class.php 第 65 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1762 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1777 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1779 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1784 行.
+NOTIC: [8] Undefined index: usenums D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 1786 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.060004s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061004s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061004s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.062004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.062004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T16:44:59+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zjl D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 2017 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.071003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.072003s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.072003s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.073003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-08-30T16:45:03+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zjl D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 2017 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054003s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055003s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T16:45:04+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zjl D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 2017 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.056003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056003s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057003s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T16:45:10+08:00 ] 127.0.0.1 /index.php?g=Wap&m=Guajiang&a=index&wecha_id=admin&token=ttoswn1436851363&id=42
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 42 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 42 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 1 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `wecha_id` = 'admin' ) AND ( `islottery` = 0 ) AND ( `lid` = 42 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: zjl D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\e7f45d5c89e78c3430f52926199aeae9.php 第 2017 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055003s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055003s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T16:46:03+08:00 ] 127.0.0.1 /index.php?g=User&m=LuckyFruit&a=index&token=ttoswn1436851363
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of LuckyFruitAction::index() should be compatible with that of LotteryBaseAction::index() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::add() should be compatible with that of LotteryBaseAction::add() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::edit() should be compatible with that of LotteryBaseAction::edit() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::sn() should be compatible with that of LotteryBaseAction::sn() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.023001s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 167 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.022001s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.018001s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function`  [ RunTime:0.008001s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `uid` = 167 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 102 行.
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `type` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LotteryBaseAction.class.php 第 16 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.133008s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.134008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.161010s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.161010s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.162010s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.162010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.163010s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-08-30T16:46:05+08:00 ] 127.0.0.1 /index.php?g=User&m=LuckyFruit&a=add&token=ttoswn1436851363
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of LuckyFruitAction::index() should be compatible with that of LotteryBaseAction::index() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::add() should be compatible with that of LotteryBaseAction::add() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::edit() should be compatible with that of LotteryBaseAction::edit() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::sn() should be compatible with that of LotteryBaseAction::sn() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.002000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function`  [ RunTime:0.000000s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `uid` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 102 行.
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: keyword D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 149 行.
+NOTIC: [8] Undefined index: starpicurl D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 154 行.
+NOTIC: [8] Undefined index: starpicurl D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 156 行.
+NOTIC: [8] Undefined index: title D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 165 行.
+NOTIC: [8] Undefined index: txt D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 172 行.
+NOTIC: [8] Undefined index: sttxt D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 178 行.
+NOTIC: [8] Undefined index: info D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 190 行.
+NOTIC: [8] Undefined index: aginfo D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 196 行.
+NOTIC: [8] Undefined index: endtite D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 214 行.
+NOTIC: [8] Undefined index: endpicurl D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 217 行.
+NOTIC: [8] Undefined index: endpicurl D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 218 行.
+NOTIC: [8] Undefined index: endinfo D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 224 行.
+NOTIC: [8] Undefined index: fist D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 242 行.
+NOTIC: [8] Undefined index: fistnums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 248 行.
+NOTIC: [8] Undefined index: second D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 253 行.
+NOTIC: [8] Undefined index: secondnums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 258 行.
+NOTIC: [8] Undefined index: third D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 263 行.
+NOTIC: [8] Undefined index: thirdnums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 268 行.
+NOTIC: [8] Undefined index: four D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 273 行.
+NOTIC: [8] Undefined index: fournums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 279 行.
+NOTIC: [8] Undefined index: five D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 284 行.
+NOTIC: [8] Undefined index: fivenums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 290 行.
+NOTIC: [8] Undefined index: six D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 295 行.
+NOTIC: [8] Undefined index: sixnums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 301 行.
+NOTIC: [8] Undefined index: allpeople D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 309 行.
+NOTIC: [8] Undefined index: canrqnums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 313 行.
+NOTIC: [8] Undefined index: daynums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 318 行.
+NOTIC: [8] Undefined index: parssword D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 330 行.
+NOTIC: [8] Use of undefined constant renamesn - assumed 'renamesn' D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 335 行.
+NOTIC: [8] Undefined index: renamesn D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 335 行.
+NOTIC: [8] Use of undefined constant renametel - assumed 'renametel' D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 339 行.
+NOTIC: [8] Undefined index: renametel D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 339 行.
+NOTIC: [8] Undefined index: displayjpnums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 343 行.
+NOTIC: [8] Undefined index: displayjpnums D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 343 行.
+NOTIC: [8] Undefined index: needreg D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 347 行.
+NOTIC: [8] Undefined index: needreg D:\www\code\weixinyuanma1\Conf\logs\Cache\User\fe2482628a0eb0053504971052ade02a.php 第 347 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061004s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061004s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062004s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.062004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.062004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T17:00:13+08:00 ] 127.0.0.1 /index.php?g=User&m=LuckyFruit&a=add&token=ttoswn1436851363
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of LuckyFruitAction::index() should be compatible with that of LotteryBaseAction::index() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::add() should be compatible with that of LotteryBaseAction::add() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::edit() should be compatible with that of LotteryBaseAction::edit() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::sn() should be compatible with that of LotteryBaseAction::sn() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 167 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.009001s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.014001s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.010001s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function`  [ RunTime:0.008000s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `uid` = 167 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: width D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 102 行.
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.008001s ]
+SQL: INSERT INTO `tp_lottery` (`type`,`keyword`,`starpicurl`,`title`,`txt`,`sttxt`,`statdate`,`enddate`,`info`,`aginfo`,`endtite`,`endpicurl`,`endinfo`,`fist`,`fistnums`,`second`,`secondnums`,`third`,`thirdnums`,`four`,`fournums`,`five`,`fivenums`,`six`,`sixnums`,`allpeople`,`canrqnums`,`daynums`,`parssword`,`renamesn`,`renametel`,`displayjpnums`,`needreg`,`token`) VALUES ('4','水果达人','http://cx-6-40.pssdss.com:81/tpl/static/luckyFruit/user/start.jpg','水果达人活动开始了','兑奖请联系我们，电话138********','提示','1472486400','1475078400','亲，请点击进入水果达人活动页面，祝您好运哦！','亲，继续努力哦！','水果达人活动已经结束�\�','http://cx-6-40.pssdss.com:81/tpl/static/luckyFruit/user/end.jpg','亲，活动已经结束，请继续关注我们的后续活动哦�\�','电视�\�','100','手机','100','打火�\�','100','','0','','0','','0','1000','100','0','123456','','','0','0','ttoswn1436851363') [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_keyword` [ RunTime:0.018001s ]
+SQL: INSERT INTO `tp_keyword` (`pid`,`module`,`token`,`keyword`) VALUES ('43','Lottery','ttoswn1436851363','水果达人') [ RunTime:0.007000s ]
+SQL: SELECT `gid`,`activitynum` FROM `tp_users` WHERE ( `id` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.003000s ]
+SQL: UPDATE `tp_lottery` SET `status`='1' WHERE ( `id` = 43 ) AND ( `token` = 'ttoswn1436851363' ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LotteryBaseAction.class.php 第 264 行.
+SQL: UPDATE `tp_users` SET `activitynum`=activitynum+1 [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.178010s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.179010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.185011s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.186011s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.186011s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.187011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.187011s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T17:00:15+08:00 ] 127.0.0.1 /index.php?g=User&m=LuckyFruit&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of LuckyFruitAction::index() should be compatible with that of LotteryBaseAction::index() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::add() should be compatible with that of LotteryBaseAction::add() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::edit() should be compatible with that of LotteryBaseAction::edit() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [2048] Declaration of LuckyFruitAction::sn() should be compatible with that of LotteryBaseAction::sn() D:\www\code\weixinyuanma1\bluesea\Lib\Action\User\LuckyFruitAction.class.php 第 3 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.002000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function`  [ RunTime:0.000000s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `uid` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 102 行.
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `type` = 4 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `lid` = 43 ) LIMIT 1   [ RunTime:0.012001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.053003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077004s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.077004s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.078004s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.079004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-08-30T17:00:17+08:00 ] 127.0.0.1 /index.php?g=User&m=Demo&url=/index.php%3Fg%3DUser%26m%3DDemo_img%26a%3Dindex%26id%3D43%26act%3DLuckyFruit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.003000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.003000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function`  [ RunTime:0.001000s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `uid` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.003000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 102 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.051003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051003s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.052003s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-08-30T17:00:17+08:00 ] 127.0.0.1 /index.php?g=User&m=Demo_img&a=index&id=43&act=LuckyFruit&show=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 167 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.003000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function`  [ RunTime:0.000000s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty needle D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `uid` = 167 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.003000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width D:\www\code\weixinyuanma1\bluesea\Lib\Action\UserAction.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.003000s ]
+SQL: SELECT `id`,`title`,starpicurl as pic,info as text FROM `tp_lottery` WHERE ( `id` = 43 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054003s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055003s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T17:01:07+08:00 ] 127.0.0.1 /index.php?g=Wap&m=LuckyFruit&a=index&wecha_id=admin&token=ttoswn1436851363&id=43
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = 'admin' ) LIMIT 1   [ RunTime:0.014000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/8/8/88d4baeabe7c161bf404622e56406d2f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.007001s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'admin' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 43 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = 'admin' ) AND ( `lid` = 43 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 43 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 4 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.144008s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLotteryButNotInputTel D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 159 行.
+NOTIC: [8] Undefined index: prize D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 163 行.
+NOTIC: [8] Undefined index: sn D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 164 行.
+NOTIC: [8] Undefined variable: isLotteryButNotSend D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 175 行.
+NOTIC: [8] Undefined variable: isLotteryAndSend D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 186 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 199 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.145008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.168009s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.169009s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.169009s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.170009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.170009s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-30T17:03:10+08:00 ] 127.0.0.1 /index.php?g=Wap&m=LuckyFruit&a=index&wecha_id=&token=ttoswn1436851363&id=43
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 37 行.
+NOTIC: [8] Undefined variable: staticPath D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+NOTIC: [8] Constant STATICS already defined D:\www\code\weixinyuanma1\bluesea\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://wx6.mzq.com' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = '' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `openid` = '' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/2/2/226399efab1d2acc397ef45b0fbd902d.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/a/d/ad99992ca8e8e6c94dfd888440794e67.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.001000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/3/7/37b7c41fcefdc8f1e5d6df80cd0fc4d7.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/f/7/f75f4eda7260b36d556308abfa75ea37.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = '' ) AND ( `token` = 'ttoswn1436851363' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data D:\www\code\weixinyuanma1\bluesea\Lib\Action\Wap\LotteryBaseAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tp_lottery_record` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = '' ) AND ( `lid` = 43 ) AND ( `islottery` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery_record` WHERE ( `token` = 'ttoswn1436851363' ) AND ( `wecha_id` = '' ) AND ( `lid` = 43 ) ORDER BY id DESC LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `id` = 43 ) AND ( `token` = 'ttoswn1436851363' ) AND ( `type` = 4 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\code\weixinyuanma1\bluesea\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.052003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: isLotteryButNotInputTel D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 159 行.
+NOTIC: [8] Undefined index: prize D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 163 行.
+NOTIC: [8] Undefined index: sn D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 164 行.
+NOTIC: [8] Undefined variable: isLotteryButNotSend D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 175 行.
+NOTIC: [8] Undefined variable: isLotteryAndSend D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 186 行.
+NOTIC: [8] Undefined index: end D:\www\code\weixinyuanma1\Conf\logs\Cache\Wap\85b480456629f43b8d1d5837eebb16ec.php 第 199 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.062003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.063003s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.063003s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.064003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+

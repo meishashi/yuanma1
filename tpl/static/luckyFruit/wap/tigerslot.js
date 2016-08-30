@@ -100,7 +100,6 @@ $(function () {
         		boxCycle.start(result.data);
         	}
         },'json');
-
     };
 
     //游戏结束
