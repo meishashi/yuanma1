@@ -121,7 +121,7 @@ document.writeln("	 <div id=\"txt\"><\/div>");
 document.writeln("	 <input type=\"button\" value=\"确定\" id=\"windowclosebutton\" name=\"确定\" class=\"txtbtn\">	");
 document.writeln("	<\/div>");
 document.writeln("<\/div>");
-//主函数
+
 $(document).ready(function () { 
 
     $("#windowclosebutton").click(function () { 

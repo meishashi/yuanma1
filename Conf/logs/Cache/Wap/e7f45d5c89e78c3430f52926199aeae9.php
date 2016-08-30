@@ -1,16 +1,17 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="format-detection" content="telephone=no">
-<meta name="description" content="">
-<title><?php echo ($Guajiang["title"]); ?></title>
-<link href="<?php echo RES;?>/css/guajiang/css/activity-style.css?<?php echo date('Y-m-d',time());?>" rel="stylesheet" type="text/css">
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title><?php echo ($Guajiang["title"]); ?></title>
+    <link href="<?php echo RES;?>/css/guajiang/css/activity-style.css?<?php echo date('Y-m-d',time());?>" rel="stylesheet" type="text/css">
 
-<script>
-/* Zepto v1.0-1-ga3cab6c - polyfill zepto detect event ajax form fx - zeptojs.com/license */
+    <script>
+    /* Zepto v1.0-1-ga3cab6c - polyfill zepto detect event ajax form fx - zeptojs.com/license */
 
 
 ; (function (undefined) {
@@ -1745,6 +1746,7 @@ window.Zepto = Zepto
             }
         };
 </script>
+
 <?php if($wecha_id != ''): ?><script src="<?php echo RES;?>/css/guajiang/js/wScratchPad.js" type="text/javascript"></script><?php endif; ?>
 </head>
 
@@ -1807,13 +1809,13 @@ window.Zepto = Zepto
 	</div><?php endif; ?>
 	<!--zjl end-->
 	<?php if($wecha_id == ''): ?><div class="boxcontent boxwhite">
-						<div class="box">
-							<div class="title-brown">友情提醒：</div>
-							<div class="Detail">
-				<p style="color:#f00;line-height:160%">您可能是从朋友圈等分享过的页面打开的链接，无法直接参与此活动，如需参与此活动请按照以下步骤操作：<br>1、关注微信名称“<?php echo ($wxuser["wxname"]); ?>”或者微信号“<?php echo ($wxuser["weixin"]); ?>”<br>2、输入关键词：“<?php echo ($Guajiang["keyword"]); ?>”</p>            
+			<div class="box">
+				<div class="title-brown">友情提醒：</div>
+				<div class="Detail">
+				    <p style="color:#f00;line-height:160%">您可能是从朋友圈等分享过的页面打开的链接，无法直接参与此活动，如需参与此活动请按照以下步骤操作：<br>1、关注微信名称“<?php echo ($wxuser["wxname"]); ?>”或者微信号“<?php echo ($wxuser["weixin"]); ?>”<br>2、输入关键词：“<?php echo ($Guajiang["keyword"]); ?>”</p>            
                </div>
-</div>
-</div><?php endif; ?>
+            </div>
+        </div><?php endif; ?>
 			
 	<div class="boxcontent boxwhite">
 		<div class="box">
@@ -1849,42 +1851,42 @@ window.Zepto = Zepto
 }
 .footFix{width:100%;text-align:center;position:fixed;left:0;bottom:0;z-index:99;}
 #footReturn a, #footReturn2 a {
-display: block;
-line-height: 41px;
-color: #fff;
-text-shadow: 1px 1px #282828;
-font-size: 14px;
-font-weight: bold;
-}
-#footReturn, #footReturn2 {
-z-index: 89;
-display: inline-block;
-text-align: center;
-text-decoration: none;
-vertical-align: middle;
-cursor: pointer;
-width: 100%;
-outline: 0 none;
-overflow: visible;
-Unknown property name.-moz-box-sizing: border-box;
-box-sizing: border-box;
-padding: 0;
-height: 41px;
-opacity: .95;
-border-top: 1px solid #181818;
-box-shadow: inset 0 1px 2px #b6b6b6;
-background-color: #515151;
-Invalid property value.background-image: -ms-linear-gradient(top,#838383,#202020);
-background-image: -webkit-linear-gradient(top,#838383,#202020);
-Invalid property value.background-image: -moz-linear-gradient(top,#838383,#202020);
-Invalid property value.background-image: -o-linear-gradient(top,#838383,#202020);
-background-image: -webkit-gradient(linear,0% 0,0% 100%,from(#838383),to(#202020));
-Invalid property value.filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
-Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
+    display: block;
+    line-height: 41px;
+    color: #fff;
+    text-shadow: 1px 1px #282828;
+    font-size: 14px;
+    font-weight: bold;
+    }
+    #footReturn, #footReturn2 {
+    z-index: 89;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+    outline: 0 none;
+    overflow: visible;
+    Unknown property name.-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    height: 41px;
+    opacity: .95;
+    border-top: 1px solid #181818;
+    box-shadow: inset 0 1px 2px #b6b6b6;
+    background-color: #515151;
+    Invalid property value.background-image: -ms-linear-gradient(top,#838383,#202020);
+    background-image: -webkit-linear-gradient(top,#838383,#202020);
+    Invalid property value.background-image: -moz-linear-gradient(top,#838383,#202020);
+    Invalid property value.background-image: -o-linear-gradient(top,#838383,#202020);
+    background-image: -webkit-gradient(linear,0% 0,0% 100%,from(#838383),to(#202020));
+    Invalid property value.filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
+    Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
 }
 
 </style>
-<div class="footFix" id="footReturn"><a href="javascript:void(0)" onClick="location.href='<?php echo U('Wap/Index/index',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']));?>';"><span>返回3G网站</span></a></div>
+<!--<div class="footFix" id="footReturn"><a href="javascript:void(0)" onClick="location.href='<?php echo U('Wap/Index/index',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']));?>';"><span>返回3G网站</span></a></div>-->
 
 <style type="text/css">
 .window {
@@ -1907,7 +1909,6 @@ Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(Gra
 	font:14px/1.5 Microsoft YaHei,Helvitica,Verdana,Arial,san-serif;
 }
 .window .title {
-	
 	background-color: #A3A2A1;
 	line-height: 26px;
     padding: 5px 5px 5px 10px;
@@ -1939,7 +1940,6 @@ Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(Gra
 	min-height:30px;font-size:16px; line-height:22px;
 }
 .window .txtbtn {
-	
 	background: #f1f1f1;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #DCDCDC ), to( #f1f1f1 )); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #ffffff , #DCDCDC ); /* Chrome 10+, Saf5.1+ */
@@ -2004,8 +2004,8 @@ Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(Gra
 <div class="window" id="windowcenter">
 	<div id="title" class="title">消息提醒<span class="close" id="alertclose"></span></div>
 	<div class="content">
-	 <div id="txt"></div>
-	 <input type="button" value="确定" id="windowclosebutton" name="确定" class="txtbtn">	
+	    <div id="txt"></div>
+	    <input type="button" value="确定" id="windowclosebutton" name="确定" class="txtbtn">	
 	</div>
 </div>
  
@@ -2014,14 +2014,19 @@ Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(Gra
 
         //window.prize = "<?php echo ($Guajiang["winprize"]); ?>";
 
-        var zjl ="<?php echo ($Guajiang["zjl"]); ?>";
+        var zjl ="<?php echo ($Guajiang["zjl"]); ?>";  //中奖率
         var num = 0;
         var goon = true;
-var winprize  = "<?php echo ($Guajiang["winprize"]); ?>";
+        var winprize  = "<?php echo ($Guajiang["winprize"]); ?>";
+        
 
 $(function () {
+        //获取浏览器型号
+        //mozilla/5.0 (iphone; cpu iphone os 9_1 like mac os x) applewebkit/601.1.46 (khtml, like gecko) version/9.0 mobile/13b143 safari/601.1
 		var useragent = window.navigator.userAgent.toLowerCase();
+       
             $("#scratchpad").wScratchPad({
+                
                 width: 150,
                 height: 40,
                 color: "#a9a9a7",
@@ -2030,7 +2035,8 @@ $(function () {
                     if (num == 2) {
                         document.getElementById('prize').innerHTML ="<?php echo ($Guajiang["winprize"]); ?>";
                     }
-                    if (zjl>0 && num > 5 && goon) {
+                    console.log(zjl);
+                    if (zjl>=0 && num > 5 && goon) {
                         //$("#zjl").fadeIn();
                         goon = false; 
                         $("#zjl").slideToggle(500);
@@ -2062,6 +2068,15 @@ $("#save-btn").bind("click",
 	        alert("请认真输入<?php echo ($Guajiang["renametel"]); ?>");
 	        return
     	}
+        if(tel.length!=11){
+            alert("手机号码个数不对");
+            return;
+        }
+        var telre = /^1(3[0-9]|4[579]|5[0-35-9]|7[0135-8]|8[0-9])\d{8}$/;
+        if(!telre.test(tel)){
+            alert("手机号码个数不对!!!");
+            return;            
+        }
 		if(wxname == ''){
 			alert("请认真输入微信号");
 			return;

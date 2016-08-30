@@ -11,13 +11,14 @@
  * @version         Version 1.4.2
  *
  ******************************************/
-(function($)
-{
+(function($){
 	$.fn.wScratchPad = function(option, settings)
 	{
+		
 		if(typeof option === 'object')
 		{
 			settings = option;
+			
 		}
 		else if(typeof option == 'string')
 		{
@@ -46,12 +47,12 @@
 		}
 		
 		settings = $.extend({}, $.fn.wScratchPad.defaultSettings, settings || {});
-
-		return this.each(function()
-		{
+		console.log(this);
+		return this.each(function(){
 			var elem = $(this);
+			
 			var $settings = jQuery.extend(true, {}, settings);
-
+			// console.log($settings);
 			//test for HTML5 canvas
 			var test = document.createElement('canvas');
 			if(!test.getContext)
