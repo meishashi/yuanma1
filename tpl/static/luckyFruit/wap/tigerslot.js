@@ -212,7 +212,6 @@ $(function () {
         var code = $parent.find('.code').html();
         $('#sn').val(code);
         $("#request-reward").slideToggle(500);
-
         return false;
     });
     
