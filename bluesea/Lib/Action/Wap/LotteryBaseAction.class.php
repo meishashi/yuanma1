@@ -36,6 +36,7 @@ class LotteryBaseAction extends WapAction{
 		    return $result; 
 	}
 	public function prizeHandle($token,$wecha_id,$Lottery){
+		//中奖记录
 		$this->lottory_record_db=M('Lottery_record');
 		$this->lottory_db=M('Lottery');
 		$now=time();

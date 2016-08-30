@@ -219,8 +219,8 @@
         <div class="title-green"><span>友情提醒：</span></div>
             <div class="Detail">
                     <p style="color:#f00;line-height:160%">您可能是从朋友圈等分享过的页面打开的链接，无法直接参与此活动，如需参与此活动请按照以下步骤操作：<br>1、关注微信名称“<?php echo ($wxuser["wxname"]); ?>”或者微信号“<?php echo ($wxuser["weixin"]); ?>”<br>2、输入关键词：“<?php echo ($Dazpan["keyword"]); ?>”</p>            
-            </div>
-        </div>
+                </div>
+    </div>
     </div><?php endif; ?>
                 
     <div class="boxcontent boxyellow">
@@ -257,43 +257,43 @@
     <style>
     .footFix{width:100%;text-align:center;position:fixed;left:0;bottom:0;z-index:99;}
     #footReturn a, #footReturn2 a {
-        display: block;
-        line-height: 41px;
-        color: #fff;
-        text-shadow: 1px 1px #282828;
-        font-size: 14px;
-        font-weight: bold;
+    display: block;
+    line-height: 41px;
+    color: #fff;
+    text-shadow: 1px 1px #282828;
+    font-size: 14px;
+    font-weight: bold;
     }
     #footReturn, #footReturn2 {
-        z-index: 89;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        cursor: pointer;
-        width: 100%;
-        outline: 0 none;
-        overflow: visible;
-        Unknown property name.-moz-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 0;
-        height: 41px;
-        opacity: .95;
-        border-top: 1px solid #181818;
-        box-shadow: inset 0 1px 2px #b6b6b6;
-        background-color: #515151;
-        Invalid property value.background-image: -ms-linear-gradient(top,#838383,#202020);
-        background-image: -webkit-linear-gradient(top,#838383,#202020);
-        Invalid property value.background-image: -moz-linear-gradient(top,#838383,#202020);
-        Invalid property value.background-image: -o-linear-gradient(top,#838383,#202020);
-        background-image: -webkit-gradient(linear,0% 0,0% 100%,from(#838383),to(#202020));
-        Invalid property value.filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
-        Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
+    z-index: 89;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+    outline: 0 none;
+    overflow: visible;
+    Unknown property name.-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    height: 41px;
+    opacity: .95;
+    border-top: 1px solid #181818;
+    box-shadow: inset 0 1px 2px #b6b6b6;
+    background-color: #515151;
+    Invalid property value.background-image: -ms-linear-gradient(top,#838383,#202020);
+    background-image: -webkit-linear-gradient(top,#838383,#202020);
+    Invalid property value.background-image: -moz-linear-gradient(top,#838383,#202020);
+    Invalid property value.background-image: -o-linear-gradient(top,#838383,#202020);
+    background-image: -webkit-gradient(linear,0% 0,0% 100%,from(#838383),to(#202020));
+    Invalid property value.filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
+    Unknown property name.-ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#838383',endColorstr='#202020');
     }
 
     </style>
     <div style="height:60px;"></div>
-    <!--<div class="footFix" id="footReturn"><a href="javascript:void(0)" onClick="location.href='<?php echo U('Wap/Index/index',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']));?>';"><span>返回3G网站</span></a></div>-->
+    <div class="footFix" id="footReturn"><a href="javascript:void(0)" onClick="location.href='<?php echo U('Wap/Index/index',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']));?>';"><span>返回3G网站</span></a></div>
     <!--footer end-->
 
     <script type="text/javascript">

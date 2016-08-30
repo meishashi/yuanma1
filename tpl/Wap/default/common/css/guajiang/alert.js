@@ -121,31 +121,32 @@ document.writeln("	 <div id=\"txt\"><\/div>");
 document.writeln("	 <input type=\"button\" value=\"确定\" id=\"windowclosebutton\" name=\"确定\" class=\"txtbtn\">	");
 document.writeln("	<\/div>");
 document.writeln("<\/div>");
+//主函数
 $(document).ready(function () { 
 
-$("#windowclosebutton").click(function () { 
-$("#windowcenter").slideUp(500);
-}); 
-$("#alertclose").click(function () { 
-$("#windowcenter").slideUp(500);
-}); 
+    $("#windowclosebutton").click(function () { 
+        $("#windowcenter").slideUp(500);
+    }); 
+    $("#alertclose").click(function () { 
+        $("#windowcenter").slideUp(500);
+    }); 
 
 }); 
 function alert(title){ 
-//var windowHeight; 
-//var windowWidth; 
-//var popWidth;  
-//var popHeight; 
-//windowHeight=$(window).height(); 
-//windowWidth=$(window).width(); 
-//popHeight=$(".window").height(); 
-//popWidth=$(".window").width(); 
-//var popY=(windowHeight-popHeight)/2; 
-//var popX=(windowWidth-popWidth)/2; 
-//$("#windowcenter").css("top",popY).css("left",popX).slideToggle("slow"); 
-$("#windowcenter").slideToggle("slow"); 
-$("#txt").html(title);
-//$("#windowcenter").hide("slow"); 
-setTimeout('$("#windowcenter").slideUp(500)',8000);
+    //var windowHeight; 
+    //var windowWidth; 
+    //var popWidth;  
+    //var popHeight; 
+    //windowHeight=$(window).height(); 
+    //windowWidth=$(window).width(); 
+    //popHeight=$(".window").height(); 
+    //popWidth=$(".window").width(); 
+    //var popY=(windowHeight-popHeight)/2; 
+    //var popX=(windowWidth-popWidth)/2; 
+    //$("#windowcenter").css("top",popY).css("left",popX).slideToggle("slow"); 
+    $("#windowcenter").slideToggle("slow"); 
+    $("#txt").html(title);
+    //$("#windowcenter").hide("slow"); 
+    setTimeout('$("#windowcenter").slideUp(500)',8000);
 } 
 
